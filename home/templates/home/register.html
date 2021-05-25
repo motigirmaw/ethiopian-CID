@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% block head %}
+<title>Register</title>
+<link href="/static/css/form.css" rel="stylesheet">
+<style>
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 14px;
+    }
+    label{
+        background: transparent;
+        font-family: Raleway-SemiBold;
+        font-size: 18px;
+        color: #333333;
+        line-height: 1.2;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100"> 
+    <a class="notify-btn topright" href="/"> Go Home
+    </a>       
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="/home/register/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <span class="contact100-form-title">
+                Register Form
+            </span>
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="name" placeholder="Full Name" required>
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="number" name="face_id" placeholder="ID [Must be a number]" required>
+                <span class="focus-input100"></span>
+            </div> 
+            <label for="gender">Sex:</label>
+            <select name="gender" id="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <div class="wrap-input100 validate-input">
+                <label for="date_of_birth">Birthday:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth"> 
+                <span class="focus-input100"></span>
+            </div> 
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="job" placeholder="Occupation" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="phone" placeholder="Telephone" required>
+                <span class="focus-input100"></span>
+            </div> 
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="religion" placeholder="Religion" required>
+                <span class="focus-input100"></span>
+            </div>
+            
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="region" placeholder="Region" required>
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="zone" placeholder="Zone" required>
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="woreda" placeholder="Woreda" required>
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="kebele" placeholder="Kebele" required>
+                <span class="focus-input100"></span>
+            </div> 
+            
+            <div class="wrap-input100  validate-input">
+                <input class="input100" type = "file" name = "image" style = "margin-left:20%;" 
+                placeholder = "Picture"  />
+            </div> 
+
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="mother_name" placeholder="Mothers Full Name" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="emergnency_case" placeholder="Emergency Case" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="emergnency_number" placeholder="Emergnency Number" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="container-contact100-form-btn">
+                <button type="submit" class="notify-btn">
+                    <span>
+                        Register
+                    </span>
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset" class="notify-btn">
+                        <span>
+                            Clear
+                        </span>
+                    </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+{% endblock %}

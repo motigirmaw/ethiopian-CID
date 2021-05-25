@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Add group | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="Add%20group%20Django%20site%20admin_files/base.css">
+
+  <link rel="stylesheet" type="text/css" href="Add%20group%20Django%20site%20admin_files/nav_sidebar.css">
+  <script src="Add%20group%20Django%20site%20admin_files/nav_sidebar.js" defer="defer"></script>
+
+<link rel="stylesheet" type="text/css" href="Add%20group%20Django%20site%20admin_files/forms.css">
+
+
+<script src="Add%20group%20Django%20site%20admin_files/a"></script>
+<script src="Add%20group%20Django%20site%20admin_files/jquery_002.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/jquery.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/core.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/RelatedObjectLookups.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/SelectBox.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/actions.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/SelectFilter2.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/urlify.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/prepopulate.js"></script>
+<script src="Add%20group%20Django%20site%20admin_files/xregexp.js"></script>
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Add%20group%20Django%20site%20admin_files/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+<style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style></head>
+
+
+<body class=" app-auth model-group change-form" data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<!--<h1 id="site-name"><a href="/admin/">Citizens Data administration</h1>-->
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>motig</strong>.
+            
+            
+                
+                    <a href="http://127.0.0.1:8000/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="http://127.0.0.1:8000/admin/password_change/">Change password</a> /
+                
+                <a href="http://127.0.0.1:8000/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="http://127.0.0.1:8000/admin/">Home</a>
+› <a href="http://127.0.0.1:8000/admin/auth/">Authentication and Authorization</a>
+› <a href="http://127.0.0.1:8000/admin/auth/group/">Groups</a>
+› Add group
+</div>
+
+    
+
+    <div class="main shifted" id="main">
+      
+        
+          
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Toggle navigation"></button>
+<nav class="sticky" id="nav-sidebar">
+  
+
+
+  
+    <div class="app-auth module current-app">
+      <table>
+        <caption>
+          <a href="http://127.0.0.1:8000/admin/auth/" class="section" title="Models in the Authentication and Authorization application">Authentication and Authorization</a>
+        </caption>
+        
+          <tbody><tr class="model-group current-model">
+            
+              <th scope="row"><a href="http://127.0.0.1:8000/admin/auth/group/" aria-current="page">Groups</a></th>
+            
+
+            
+              <td><a href="http://127.0.0.1:8000/admin/auth/group/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-user">
+            
+              <th scope="row"><a href="http://127.0.0.1:8000/admin/auth/user/">Users</a></th>
+            
+
+            
+              <td><a href="http://127.0.0.1:8000/admin/auth/user/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </tbody></table>
+    </div>
+  
+    <div class="app-home module">
+      <table>
+        <caption>
+          <a href="http://127.0.0.1:8000/admin/home/" class="section" title="Models in the Home application">Home</a>
+        </caption>
+        
+          <tbody><tr class="model-userprofile">
+            
+              <th scope="row"><a href="http://127.0.0.1:8000/admin/home/userprofile/">User profiles</a></th>
+            
+
+            
+              <td><a href="http://127.0.0.1:8000/admin/home/userprofile/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </tbody></table>
+    </div>
+  
+
+
+</nav>
+
+        
+      
+      <div class="content">
+        
+          
+        
+        <!-- Content -->
+        <div id="content" class="colM">
+          
+          <h1>Add Community</h1>
+          <div id="content-main">
+
+
+
+<form method="post" id="group_form" novalidate=""><input type="hidden" name="csrfmiddlewaretoken" value="hUJWhuoHhdjGA7tkikt5bc1dt37AQljRVYmZmID9arizrY13aa30kx0SGnWis2qw">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-name">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_name">Name:</label>
+                        
+                            <input type="text" name="name" class="vTextField" maxlength="150" required="" id="id_name">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-permissions">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_permissions">Permissions:</label>
+                        
+                            <div class="related-widget-wrapper">
+    
+    
+        
+    
+<div class="selector"><div class="selector-available"><h2>Available permissions <span class="help help-tooltip help-icon" title="This is the list of available permissions. You may choose some by selecting them in the box below and then clicking the &quot;Choose&quot; arrow between the two boxes."></span></h2><p id="id_permissions_filter" class="selector-filter"><label for="id_permissions_input"><span class="help-tooltip search-label-icon" title="Type into this box to filter down the list of available permissions."></span></label> <input type="text" placeholder="Filter" id="id_permissions_input"></p><select name="permissions_old" id="id_permissions_from" multiple="multiple" class="filtered" data-field-name="permissions" data-is-stacked="0"><option value="5" title="admin | log entry | Can add log entry">admin | log entry | Can add log entry</option><option value="6" title="admin | log entry | Can change log entry">admin | log entry | Can change log entry</option><option value="7" title="admin | log entry | Can delete log entry">admin | log entry | Can delete log entry</option><option value="8" title="admin | log entry | Can view log entry">admin | log entry | Can view log entry</option><option value="13" title="auth | group | Can add group">auth | group | Can add group</option><option value="14" title="auth | group | Can change group">auth | group | Can change group</option><option value="15" title="auth | group | Can delete group">auth | group | Can delete group</option><option value="16" title="auth | group | Can view group">auth | group | Can view group</option><option value="9" title="auth | permission | Can add permission">auth | permission | Can add permission</option><option value="10" title="auth | permission | Can change permission">auth | permission | Can change permission</option><option value="11" title="auth | permission | Can delete permission">auth | permission | Can delete permission</option><option value="12" title="auth | permission | Can view permission">auth | permission | Can view permission</option><option value="17" title="auth | user | Can add user">auth | user | Can add user</option><option value="18" title="auth | user | Can change user">auth | user | Can change user</option><option value="19" title="auth | user | Can delete user">auth | user | Can delete user</option><option value="20" title="auth | user | Can view user">auth | user | Can view user</option><option value="21" title="contenttypes | content type | Can add content type">contenttypes | content type | Can add content type</option><option value="22" title="contenttypes | content type | Can change content type">contenttypes | content type | Can change content type</option><option value="23" title="contenttypes | content type | Can delete content type">contenttypes | content type | Can delete content type</option><option value="24" title="contenttypes | content type | Can view content type">contenttypes | content type | Can view content type</option><option value="1" title="home | user profile | Can add user profile">home | user profile | Can add user profile</option><option value="2" title="home | user profile | Can change user profile">home | user profile | Can change user profile</option><option value="3" title="home | user profile | Can delete user profile">home | user profile | Can delete user profile</option><option value="4" title="home | user profile | Can view user profile">home | user profile | Can view user profile</option><option value="25" title="sessions | session | Can add session">sessions | session | Can add session</option><option value="26" title="sessions | session | Can change session">sessions | session | Can change session</option><option value="27" title="sessions | session | Can delete session">sessions | session | Can delete session</option><option value="28" title="sessions | session | Can view session">sessions | session | Can view session</option></select><a title="Click to choose all permissions at once." href="#" id="id_permissions_add_all_link" class="selector-chooseall active">Choose all</a></div><ul class="selector-chooser"><li><a title="Choose" href="#" id="id_permissions_add_link" class="selector-add">Choose</a></li><li><a title="Remove" href="#" id="id_permissions_remove_link" class="selector-remove">Remove</a></li></ul><div class="selector-chosen"><h2>Chosen permissions <span class="help help-tooltip help-icon" title="This is the list of chosen permissions. You may remove some by selecting them in the box below and then clicking the &quot;Remove&quot; arrow between the two boxes."></span></h2><select id="id_permissions_to" multiple="multiple" size="0" name="permissions" class="filtered" style="height: 268px;"></select><a title="Click to remove all chosen permissions at once." href="#" id="id_permissions_remove_all_link" class="selector-clearall">Remove all</a></div></div></div>
+                        
+                    
+                    
+                        <div class="help">Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Save" class="default" name="_save">
+
+
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+
+
+</div>
+
+
+
+    <script id="django-admin-form-add-constants" src="Add%20group%20Django%20site%20admin_files/change_form.js" data-model-name="group" async="">
+    </script>
+
+
+
+
+<script id="django-admin-prepopulated-fields-constants" src="Add%20group%20Django%20site%20admin_files/prepopulate_init.js" data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+          
+          <br class="clear">
+        </div>
+        <!-- END Content -->
+        <div id="footer"></div>
+      </div>
+    </div>
+</div>
+<!-- END Container -->
+
+
+</body></html>

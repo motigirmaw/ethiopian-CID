@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Profile</title>
+<link href="/static/css/profile.css" rel="stylesheet">
+<link rel="stylesheet" href="/static/linericon/style.css">
+<style>
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 14px;
+    }
+    h1, h2, h3, h4, h5, p, li, div{
+        color: black;
+        align-items: left;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+<script>
+    function age (date_of_birth)
+    {
+        var date_of_birth = new Date(Document.getElemnetById("date_of_birth").value);
+        var date_of_birth_day = date_of_birth.getDate();
+        var date_of_birth_month = date_of_birth.getMonth();
+        var date_of_birth_year = date_of_birth.getFullYear();
+
+        var today_date = new Date();
+        var today_day = today_date.getDate();
+        var today_month = today_month.getMonth();
+        var today_year = today_year.getFullYear();
+
+        var cal_age = 0;
+        if (today_month > date_of_birth_month) cal_age = to - date_of_birth_year;
+        else if (today_month==date_of_birth_month)
+        {
+            if (today_day >= date_of_birth_day) cal_age = today_year - date_of_birth_year;
+            else cal_age = today_year - date_of_birth_year - 1;
+        }
+        else cal_age = today_year - date_of_birth_year - 1;
+        var output_value = cal_age;
+        document.getElemnetById("cal_age").innerHTML = cal_age;
+    }
+</script>
+{% endblock %}
+{% block body %}
+<div class="container-profile">
+    <a class="notify-btn topright" href="/home"> Go Home </a> 
+    <div class="wrap-profile">
+        <div class="row">
+            <div class="col-4">
+                {% if user.image %}
+                   <img src="{{ user.image.url }}">
+                {% else %}
+                    <img src="/static/images/dp.jpeg">
+                {% endif %}
+            </div>
+            <div class="col-1"></div>
+            <div class="col-7">
+                <p>Full name: {{ user.name }}</p>
+                <p>Sex: {{ user.gender }}</p>
+                <p>age:  {{ user.age }}</p>
+                <p>Job: {{ user.job }}</p>
+                <p>phone: {{ user.phone }}</p>
+                <p>religion: {{ user.religion }}</p>
+                <p>region: {{ user.region }}</p>
+                <p>zone: {{ user.zone }}</p>
+                <p>woreda: {{ user.woreda }}</p>
+                <p>kebele: {{ user.kebele }}</p>
+                <p>mother name: {{ user.mother_name }}</p>
+                <p>emergnency case: {{ user.emergnency_case }}</p>
+                <p>emergnency number: {{ user.emergnency_number }}</p>
+                <a href="/home/medical/"><b>morre detail</b></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="notify-btn" href="/home/"><b>Home</b></a>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}
