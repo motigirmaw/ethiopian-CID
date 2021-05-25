@@ -14,7 +14,7 @@ SECRET_KEY = '3j4gxl6gju@o7j8l_9jbj5f5_$pz9iwnu*5l#vwy1lk9u_8*2l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'etcid.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'ethio-cid.herokuapp.com/']
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'accounts.apps.AccountsConfig',
